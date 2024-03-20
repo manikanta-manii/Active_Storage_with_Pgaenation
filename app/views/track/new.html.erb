@@ -1,0 +1,7 @@
+<%= form_with(model: @track) do |form| %>
+<%= form.label :img%>
+<%= form.file_field :img %>
+<%= form.label :aud%>
+<%= form.file_field :aud %>
+<%= form.submit %> 
+<% end %>

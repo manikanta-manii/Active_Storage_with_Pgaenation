@@ -1,0 +1,12 @@
+
+<div class="apple_pagination">
+    <%= page_entries_info @tracks %>
+    <div class="page_info">
+      
+      <% @tracks.each do |el|%>
+      <%=image_tag(el.img)%>
+       <%= audio_tag(el.aud, controls: true)%>
+<%end%>
+    </div>
+    <%= will_paginate @tracks, :container => false %>
+  </div>
